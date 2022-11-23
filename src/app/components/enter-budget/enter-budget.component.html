@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-lg-6 offset-lg-3">
+    <div class="card mt-5">
+      <ng-container class="text-center"><span *ngIf="totalKO" class="badge badge-lg h-100 bg-danger h3 text-center">La
+          provisión de fondos debe ser superior a 0€</span></ng-container>
+      <div class="card-body">
+        <div>
+          <label for="budget" style="color:#012852;" class="form-label mt-1">
+            <h5>Provisión de fondos:</h5>
+          </label>
+          <input id="budget" type="number" [(ngModel)]="total" class="form-control text-center">
+          <div id="numberHelp" class="form-text">Introduce tu provisión de fondos en euros...</div>
+          <button style="width:100%;" (click)="input()"
+            class="btn btn-secondary h2 btn-lg btn-block mt-3">INSERTAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

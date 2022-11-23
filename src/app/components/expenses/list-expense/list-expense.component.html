@@ -1,0 +1,29 @@
+<div class="container-fluid mt-4">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="alert alert-success text-center"><strong>Provisión inicial: {{ budget }} €</strong> </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="text-center" [ngClass]="insertClass()"><strong>Sobrante: {{ leftover }} €</strong></div>
+    </div>
+  </div>
+  <div class="card mt-1">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+        </div>
+        <h5 class="text-center" style="color:#012852;">LISTADO DE GASTOS</h5>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="list-group list-group-flush">
+              <li *ngFor="let budget of listBudget" class="list-group-item d-flex justify-content-between">
+                <strong>{{budget.name}}:&nbsp;</strong>
+                <span class="badge rounded-pill bg-secondary">{{budget.quantity}}€</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
