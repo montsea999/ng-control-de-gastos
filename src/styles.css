@@ -1,19 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-body {
- /* 1 Ubicación de la imagen */
- background-image: url('./assets/fondo.jpg');
- /* 2 centrada, vertical y horizontalmente */
- background-position: center center;
- /* 3 que no se repita */
- background-repeat: no-repeat;
- /* fijada en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
- background-attachment: fixed;
- /* 4 se reescale automáticamente con el cambio del ancho de ventana del navegador */
- background-size: cover;
- /* b Se mueste un color de fondo mientras se está cargando la imagen de fondo o si hay problemas para cargarla */
- background-color: rgb(28, 27, 27);
-  font-family: "Montserrat";
+
+body{
+  background: #ADA996;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #b9cae8);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #EAEAEA, #DBDBDB, #b6bfc7, #c0cbd6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-family: "Montserrat";
 }
+
 h1,
 h2 {
   text-transform: uppercase;
